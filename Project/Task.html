@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <style>
+        body {
+            background-color:powderblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+         h1 {
+            color: #2003B0;
+        }
+        
+
+        .form{
+            width:500px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #00FFFF;
+            padding:20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }   
+        .formSet{
+            width:100%;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .formLabel{
+            width:30%;
+        }
+
+        input{
+            width:70%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            width: fit-content;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+    }
+
+        </style>
+</head>
+<body>
+   <h1>Task</h1>
+    <form action="regTAsk.php" method="POST" class="form">
+            <div class="formSet">
+               <div class="formLabel">
+                    Tid:
+               </div>  
+               <div class="formInput">
+                   <input type="text" name="Tid"><br><br>
+               </div>
+            </div>
+            
+            
+             <div class="formSet">
+                <div class="formLabel">
+                    Name:
+                </div>  
+                <div class="formInput">
+                    <input type="text" name="Name"><br><br>
+                </div>
+             </div>
+             <div class="formSet">
+                 <div class="formLabel">
+                    Start_date:
+                 </div>  
+                 <div class="formInput">
+                     <input type="date" name="Start_date"><br><br>
+                 </div>
+              </div>
+              <div class="formSet">
+                <div class="formLabel">
+                    End_date:
+                </div>  
+                <div class="formInput">
+                    <input type="date" name="End_date"><br><br>
+                </div>
+             </div>
+             <div class="formSet">
+                <div class="formLabel">
+                    nature:
+                </div>  
+                <div class="formInput">
+                    <input type="text" name="nature"><br><br>
+                </div>
+             </div>
+
+        <input style="width: fit-content;" type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
